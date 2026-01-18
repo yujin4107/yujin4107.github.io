@@ -43,7 +43,7 @@ body {
   animation: homeFadeIn 0.35s ease-out forwards;
 }
 .home-overlay .home-cn {
-  font-family: "Songti SC", "STSong", "SimSun", "Source Han Serif SC", serif;
+  font-family: "Source Han Serif SC", serif;
   font-size: 46px;
   font-weight: 600;
   letter-spacing: 4px; /* nice for Chinese titles */
