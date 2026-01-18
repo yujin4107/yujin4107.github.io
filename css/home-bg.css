@@ -17,7 +17,7 @@ body {
 }
 /* Overlay text styling */
 .home-overlay {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -35,4 +35,42 @@ body {
   width: 80%;
   margin: 0 auto;
   line-height: 1.8;
+}
+/* Make bg + overlay fade in together */
+.home-background,
+.home-overlay {
+  opacity: 0;
+  animation: homeFadeIn 0.35s ease-out forwards;
+}
+@-moz-keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
