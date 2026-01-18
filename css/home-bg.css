@@ -42,6 +42,21 @@ body {
   opacity: 0;
   animation: homeFadeIn 0.35s ease-out forwards;
 }
+.home-overlay .home-cn {
+  font-family: "Noto Serif SC", "Songti SC", "STSong", "SimSun", "Source Han Serif SC", serif;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 2px; /* nice for Chinese titles */
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+.home-overlay .home-en {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
 @-moz-keyframes homeFadeIn {
   from {
     opacity: 0;
