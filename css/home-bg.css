@@ -46,7 +46,7 @@ body {
   font-family: "Songti SC", "STSong", "SimSun", "Source Han Serif SC", serif;
   font-size: 46px;
   font-weight: 600;
-  letter-spacing: 2px; /* nice for Chinese titles */
+  letter-spacing: 4px; /* nice for Chinese titles */
   line-height: 1.2;
   margin: 0 0 10px 0;
 }
