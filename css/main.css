@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #f42e03;
+  background: #a6c34d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2697,7 +2697,7 @@ body {
   z-index: -1;
 }
 .home-overlay {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2715,4 +2715,32 @@ body {
   width: 80%;
   margin: 0 auto;
   line-height: 1.8;
+}
+.home-background,
+.home-overlay {
+  opacity: 0;
+  animation: homeFadeIn 0.35s ease-out forwards;
+}
+.home-overlay .home-cn {
+  font-family: "Source Han Serif SC", serif;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 4px; /* nice for Chinese titles */
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+.home-overlay .home-en {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
