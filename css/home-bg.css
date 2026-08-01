@@ -44,7 +44,7 @@ body {
   will-change: opacity, transform;
 }
 .home-ready .home-background {
-  animation: homeImageIn 1.2s ease-out forwards;
+  animation: homeImageIn 2 s ease-out forwards;
 }
 .home-ready .home-overlay {
   animation: homeTextIn 1s ease-out 0.35s forwards;
