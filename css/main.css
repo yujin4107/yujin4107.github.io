@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #ff06ff;
+  background: #ff0e2e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2686,13 +2686,14 @@ body {
   margin: 0;
 }
 .home-background {
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  background-position: center center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
   z-index: -1;
   transform: scale(1.02);
 }
