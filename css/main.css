@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #ff0e2e;
+  background: #ac9c0a;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2718,17 +2718,6 @@ body {
   margin: 0 auto;
   line-height: 1.8;
 }
-.home-background,
-.home-overlay {
-  opacity: 0;
-  will-change: opacity, transform;
-}
-.home-ready .home-background {
-  animation: homeImageIn 1.2s ease-out forwards;
-}
-.home-ready .home-overlay {
-  animation: homeTextIn 1s ease-out 0.35s forwards;
-}
 .home-overlay .home-cn {
   font-family: "Source Han Serif SC", serif;
   font-size: 46px;
@@ -2743,24 +2732,4 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   margin: 0;
-}
-@keyframes homeImageIn {
-  from {
-    opacity: 0;
-    transform: scale(1.04);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1.02);
-  }
-}
-@keyframes homeTextIn {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -46%);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
 }
