@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #57ff96;
+  background: #67debf;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2680,55 +2680,175 @@ header.header {
 .sub-menu .menu-item {
   display: inline-block;
 }
-html,
-body {
-  height: 100%;
+.page .post-body {
+  max-width: none;
+}
+.site-meta {
+  display: none;
+}
+header.header {
+  justify-content: flex-end;
+}
+header.header .site-brand-container {
+  padding: 0;
+}
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(360px, 1.15fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: stretch;
+  max-width: 1120px;
+  margin: 2rem auto 3rem;
+  text-align: left;
+}
+.about-portrait {
+  min-height: 540px;
+  background: linear-gradient(145deg, rgba(18,48,60,0.18), rgba(17,157,149,0.08)), url("/images/home.jpg") center/cover;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.about-eyebrow,
+.project-kicker {
+  margin: 0 0 0.4rem;
+  color: #20a99e;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.about-copy h1 {
   margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
 }
-.home-background {
-  background-image: url("../images/home.jpg");
-  background-size: cover;
-  background-position: center center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.about-intro {
+  margin: 2rem 0 2.8rem;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
 }
-.home-overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  text-align: center;
-  color: #000;
-  font-family: 'Georgia', serif;
-  text-shadow: 0 2px 18px rgba(255,255,255,0.45);
-}
-.home-overlay h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.home-overlay p {
-  font-size: 24px;
-  width: 80%;
-  margin: 0 auto;
+.about-copy blockquote {
+  margin: 0;
+  padding: 0.2rem 0 0.2rem 2rem;
+  border-left: 2px solid #b9c5c2;
+  color: #3c4547;
+  font-size: 1.3rem;
+  font-style: italic;
   line-height: 1.8;
 }
-.home-overlay .home-cn {
-  font-family: "Source Han Serif SC", serif;
-  font-size: 46px;
-  font-weight: 600;
-  letter-spacing: 4px; /* nice for Chinese titles */
-  line-height: 1.2;
-  margin: 0 0 10px 0;
+.about-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
 }
-.home-overlay .home-en {
-  font-family: "Georgia", serif;
-  font-size: 28px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+.about-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border: 2px solid #20a99e;
+  border-radius: 4px;
+  color: #1d7772;
+  font-size: 1.25rem;
+}
+.about-icon:hover,
+.project-link:hover {
+  background: #20a99e;
+  color: #fff;
+}
+.projects-showcase {
+  width: 100vw;
+  margin: 1rem calc(50% - 50vw) 3rem;
+}
+.project-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(270px, 0.75fr);
+  min-height: 330px;
+}
+.project-row--sky {
+  background: #e1f5fb;
+}
+.project-row--lavender {
+  background: #f0ebf7;
+}
+.project-row--mint {
+  background: #e6f4f2;
+}
+.project-visual {
+  display: grid;
+  min-height: 330px;
+  place-items: center;
+  overflow: hidden;
+}
+.project-visual img {
+  max-width: 75%;
+  max-height: 260px;
+  object-fit: contain;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.project-visual--story {
+  background: linear-gradient(130deg, #17333d, #396670);
+  color: rgba(255,255,255,0.9);
+  font-family: Arial, sans-serif;
+  font-size: clamp(5rem, 14vw, 10rem);
+  font-weight: 700;
+}
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.75rem clamp(1.5rem, 4vw, 4rem);
+  text-align: center;
+}
+.project-details h2 {
   margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  line-height: 1.15;
+}
+.project-details > p:not(.project-kicker) {
+  max-width: 20rem;
+  margin: 1rem 0 1.8rem;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+.project-link {
+  padding: 0.75rem 1.2rem;
+  border: 2px solid currentColor;
+  color: #1d333e;
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.project-row--reverse .project-visual {
+  order: 2;
+}
+@media (max-width: 767px) {
+  .about-hero,
+  .project-row {
+    grid-template-columns: 1fr;
+  }
+  .about-portrait {
+    min-height: 370px;
+  }
+  .about-copy {
+    padding: 0.5rem 0;
+  }
+  .about-copy blockquote {
+    padding-left: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .project-row--reverse .project-visual {
+    order: initial;
+  }
+  .project-visual {
+    min-height: 240px;
+  }
 }
