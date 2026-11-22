@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #0b1155;
+  background: #fff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2696,8 +2696,10 @@ header.header {
     margin-left: calc(50% - 50vw + 1.5rem);
   }
   header.header .site-nav {
-    position: absolute;
-    right: 0;
+    position: fixed;
+    top: 1.6rem;
+    right: 2rem;
+    z-index: 100;
   }
 }
 header.header .site-brand-container {
