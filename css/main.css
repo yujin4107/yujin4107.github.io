@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #03ff85;
+  background: #0ebe08;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2758,6 +2758,12 @@ header.header .site-brand-container {
   color: #617173;
   font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.15rem;
+}
+.about-photo-slot img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
 }
 .about-intro-card {
   display: flex;
