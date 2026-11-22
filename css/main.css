@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #4661ff;
+  background: #307d2d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2833,6 +2833,30 @@ header.header .site-brand-container {
 }
 .about-background-card .education-section {
   grid-column: 1/-1;
+}
+.about-background-card .experience-section {
+  grid-column: 1/-1;
+  margin-top: 0.5rem;
+}
+.experience-section > h2 {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #cdd6d8;
+}
+.research-role {
+  margin-bottom: 0.35rem;
+  color: #243840;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.research-project {
+  margin: 1rem 0 0.5rem;
+}
+.research-project em {
+  color: #243840;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
 }
 .education-entry + .education-entry {
   margin-top: 2.25rem;
