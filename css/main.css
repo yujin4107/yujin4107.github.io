@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #88ec24;
+  background: #d4ffeb;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2682,6 +2682,9 @@ header.header {
 }
 .page .post-body {
   max-width: none;
+}
+.column {
+  background: #fff;
 }
 .site-meta {
   display: none;
