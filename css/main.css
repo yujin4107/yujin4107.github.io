@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #fff5e9;
+  background: #4eff6c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2746,11 +2746,11 @@ header.header .site-brand-container {
 }
 @media (min-width: 768px) {
   .about-layout {
-    width: calc(100vw - 4rem);
+    width: auto;
     max-width: none;
     grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1.2fr);
     grid-template-rows: calc(100vh - 10rem) auto;
-    margin-top: 0;
+    margin: 0 2rem 4rem;
   }
   .about-photo-slot,
   .about-intro-card {
