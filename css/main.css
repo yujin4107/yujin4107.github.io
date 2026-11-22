@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #049cbb;
+  background: #03ff85;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2734,6 +2734,87 @@ header.header .site-brand-container {
   .home-introduction p {
     max-width: none;
     white-space: nowrap;
+  }
+}
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(360px, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  max-width: 1180px;
+  margin: 2rem auto 4rem;
+  text-align: left;
+}
+.about-photo-slot,
+.about-intro-card,
+.about-background-card {
+  border: 1px solid #cdd6d8;
+  box-sizing: border-box;
+}
+.about-photo-slot {
+  display: grid;
+  min-height: 470px;
+  place-items: center;
+  background: #f2f6f5;
+  color: #617173;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.15rem;
+}
+.about-intro-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 5rem);
+}
+.about-label {
+  margin: 0 0 0.75rem;
+  color: #288c86;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.about-intro-card h1 {
+  margin: 0 0 1.25rem;
+  color: #243840;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.1;
+}
+.about-intro-card > p:not(.about-label) {
+  margin: 0 0 1rem;
+  color: #405154;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.about-background-card {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(2rem, 4vw, 4rem);
+}
+.about-background-card h2 {
+  margin: 0 0 1rem;
+  color: #243840;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.45rem;
+}
+.about-background-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.about-background-card li {
+  margin-bottom: 0.8rem;
+  color: #526265;
+  line-height: 1.55;
+}
+@media (max-width: 767px) {
+  .about-layout,
+  .about-background-card {
+    grid-template-columns: 1fr;
+  }
+  .about-photo-slot {
+    min-height: 320px;
   }
 }
 .about-hero {
