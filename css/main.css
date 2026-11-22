@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #fff;
+  background: #39c7e2;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2903,7 +2903,7 @@ header.header .site-brand-container {
 }
 .publications-page {
   max-width: 1000px;
-  margin: 1rem auto 4rem;
+  margin: 0.25rem auto 4rem;
   text-align: left;
 }
 .publications-label {
@@ -2915,10 +2915,10 @@ header.header .site-brand-container {
   letter-spacing: 0.16em;
 }
 .publications-page h1 {
-  margin: 0 0 2.25rem;
+  margin: 0 0 1.5rem;
   color: #243840;
   font-family: Inter, "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
 }
 .publications-list {
   margin: 0;
