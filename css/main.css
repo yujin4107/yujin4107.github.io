@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #0ebe08;
+  background: #ffff46;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2813,6 +2813,52 @@ header.header .site-brand-container {
   margin-bottom: 0.8rem;
   color: #526265;
   line-height: 1.55;
+}
+.about-background-card .education-section {
+  grid-column: 1/-1;
+}
+.education-entry + .education-entry {
+  margin-top: 2.25rem;
+}
+.education-heading,
+.education-exchange {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.education-heading strong {
+  color: #243840;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+.education-heading strong:last-child,
+.education-exchange span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.education-school,
+.education-exchange {
+  margin: 0.35rem 0 1rem;
+  color: #526265;
+  font-size: 1.08rem;
+  font-style: italic;
+}
+.education-exchange span {
+  font-style: normal;
+}
+.education-entry ul {
+  margin-top: 0.5rem;
+}
+@media (max-width: 767px) {
+  .education-heading,
+  .education-exchange {
+    display: block;
+  }
+  .education-heading strong:last-child,
+  .education-exchange span {
+    display: block;
+    margin-top: 0.35rem;
+  }
 }
 @media (max-width: 767px) {
   .about-layout,
