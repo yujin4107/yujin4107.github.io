@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #9cde25;
+  background: #88ec24;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2718,10 +2718,12 @@ header.header .site-brand-container {
   max-width: 42rem;
   margin: 0;
   color: #243840;
-  font-family: Arial, sans-serif;
-  font-size: clamp(1.6rem, 3vw, 2.7rem);
-  font-weight: 600;
-  line-height: 1.35;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2rem, 3.2vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.025em;
+  transform: translateY(-3rem);
 }
 .about-hero {
   display: grid;
