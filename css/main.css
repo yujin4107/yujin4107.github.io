@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #4eff6c;
+  background: #4661ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2746,16 +2746,19 @@ header.header .site-brand-container {
 }
 @media (min-width: 768px) {
   .about-layout {
-    width: auto;
+    width: calc(100vw - 6cm);
     max-width: none;
     grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1.2fr);
     grid-template-rows: calc(100vh - 10rem) auto;
-    margin: 0 2rem 4rem;
+    margin: 0 0 4rem calc(50% - 50vw + 3cm);
   }
   .about-photo-slot,
   .about-intro-card {
     min-height: 0;
     height: 100%;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 .about-photo-slot,
