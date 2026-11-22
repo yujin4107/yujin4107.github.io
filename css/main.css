@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #5cb83e;
+  background: #44b306;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2903,7 +2903,7 @@ header.header .site-brand-container {
 }
 .publications-page {
   max-width: 1000px;
-  margin: 2rem auto 4rem;
+  margin: 4rem auto;
   text-align: left;
 }
 .publications-label {
@@ -2923,6 +2923,7 @@ header.header .site-brand-container {
 .publications-list {
   margin: 0;
   padding-left: 1.8rem;
+  list-style-type: square;
 }
 .publications-list li {
   margin-bottom: 1.75rem;
